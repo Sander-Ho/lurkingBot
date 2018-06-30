@@ -1,0 +1,30 @@
+{
+  "postive": {
+    "option1": "It is certain.",
+    "option2": "It is decidedly so.",
+    "option3": "Without a doubt.",
+    "option4": "Yes - definitely.",
+    "option5": "You may rely on it.",
+    "option6": "As I see it, yes.",
+    "option7": " Most likely.",
+    "option8": "Outlook good.",
+    "option9": "Yes.",
+    "option10": "Signs point to yes."
+  },
+
+  "non-committal": {
+    "option1": "Reply hazy, try again",
+    "option2": "Ask again later.",
+    "option3": "Better not tell you now.",
+    "option4": "Cannot predict now.",
+    "option5": "Concentrate and ask again."
+  },
+
+  "negative": {
+    "option1": "Don't count on it.",
+    "option2": "My reply is no.",
+    "option3": "My sources say no",
+    "option4": "Outlook not so good.",
+    "option5": "Very doubtful."
+  }
+}

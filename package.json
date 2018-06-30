@@ -1,0 +1,11 @@
+{
+  "name": "LurkingBot",
+  "version": "1.0.0",
+  "description": "My own Discord Sander-Bot",
+  "main": "main.js",
+  "author": "Sander Horemans",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "discord.js-commando": "^0.10.0"
+  }
+}
