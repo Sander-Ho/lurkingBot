@@ -1,1 +1,1 @@
-worker: node --harmony main.js
+worker: node --harmony .

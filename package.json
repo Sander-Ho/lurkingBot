@@ -4,6 +4,9 @@
   "description": "My own Discord Sander-Bot",
   "main": "main.js",
   "author": "Sander Horemans",
+  "scripts": {
+      "start": "node --harmony ."
+  },
   "dependencies": {
     "discord.js": "^11.3.2",
     "discord.js-commando": "^0.10.0",
