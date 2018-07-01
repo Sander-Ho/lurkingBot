@@ -1,11 +1,10 @@
-var config = require('./config.json');
-
+require('dotenv').config();
 const { CommandoClient } = require('discord.js-commando');
 const path = require('path');
 
 const client = new CommandoClient({
-    owner: config.owner,
-    commandPrefix: config.prefix,
+    owner: process.env.OWNER,
+    commandPrefix: process.env.prefix,
     disableEveryone: true
 });﻿
 
@@ -27,4 +26,4 @@ client.on('ready', () => {
     client.user.setActivity('§ is the prefix');
 });
 
-client.login(config.token);
+client.login(process.env.token);
