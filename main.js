@@ -13,7 +13,8 @@ client.registry
     .registerDefaultTypes()
     .registerGroups([
         ['random', 'random commands'],
-        ['regular', 'simple commands']
+        ['regular', 'simple commands'],
+        ['admin', 'commands for admins']
     ])
     .registerDefaultGroups()
     .registerDefaultCommands()
