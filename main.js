@@ -23,7 +23,7 @@ client.registry
 
 client.on('ready', () => {
     console.log('Logged in!');
-    client.user.setActivity(process.env.PREFIX 'is the prefix');
+    client.user.setActivity(process.env.PREFIX + 'is the prefix');
 });
 console.log("logging in with " + process.env.TOKEN + " as token");
 client.login(process.env.TOKEN);
