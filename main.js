@@ -4,7 +4,7 @@ const path = require('path');
 
 const client = new CommandoClient({
     owner: process.env.OWNER,
-    commandPrefix: process.env.prefix,
+    commandPrefix: process.env.PREFIX,
     disableEveryone: true
 });﻿
 
@@ -25,5 +25,5 @@ client.on('ready', () => {
     console.log('Logged in!');
     client.user.setActivity('§ is the prefix');
 });
-
-client.login(process.env.token);
+console.log("logging in with " + process.env.TOKEN + " as token");
+client.login(process.env.TOKEN);
