@@ -5,7 +5,7 @@
   "main": "main.js",
   "author": "Sander Horemans",
   "scripts": {
-      "start": "node --harmony ."
+      "start": "node main.js"
   },
   "dependencies": {
     "discord.js": "^11.3.2",
