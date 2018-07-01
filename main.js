@@ -1,12 +1,29 @@
-const commando = require('discord.js-commando');
 var config = require('./config.json');
-const bot = new commando.Client({
-  owner: config.owner,
-  commandPrefix: config.prefix,
+
+const { CommandoClient } = require('discord.js-commando');
+const path = require('path');
+
+const client = new CommandoClient({
+    owner: config.owner,
+    commandPrefix: config.prefix,
+    disableEveryone: true
 });﻿
-bot.login(config.token);
+
+client.registry
+    .registerDefaultTypes()
+    .registerGroups([
+        ['random', 'random commands'],
+        ['regular', 'simple commands']
+    ])
+    .registerDefaultGroups()
+    .registerDefaultCommands()
+    .registerCommandsIn(path.join(__dirname, 'commands'))
+    ;
 
 
-bot.registry.registerGroup('random','Random');
-bot.registry.registerDefaults();
-bot.registry.registerCommandsIn(__dirname + "\\commands");
+client.on('ready', () => {
+    console.log('Logged in!');
+    client.user.setActivity('§ is the prefix');
+});
+
+client.login(config.token);

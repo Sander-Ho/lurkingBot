@@ -1,6 +1,6 @@
-const commando = require('discord.js-commando');
+const Commando = require('discord.js-commando');
 
-class Test extends commando.Command {
+class TestCommand extends Commando.Command {
     constructor(client) {
         super(client, {
             name: 'test',
@@ -15,4 +15,4 @@ class Test extends commando.Command {
     }
 }
 
-module.exports = Test
+module.exports = TestCommand

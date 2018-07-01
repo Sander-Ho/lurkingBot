@@ -1,14 +1,15 @@
-const commando = require('discord.js-commando');
+const Commando = require('discord.js-commando');
 
 var recource = require('../../recources/commands/magic8ball.json');
 
-class MagicEightBall extends commando.Command {
+class MagicEightBallCommand extends Commando.Command {
     constructor(client) {
       super(client, {
         name: '8ball',
         group: 'random',
         memberName: 'magic 8 ball',
-        description: 'gives you a random reply'
+        description: 'gives you a random reply',
+        examples: ['8ball Will this work?']
       });
     }
 
@@ -33,4 +34,4 @@ class MagicEightBall extends commando.Command {
       }
     }
 
-module.exports = MagicEightBall
+module.exports = MagicEightBallCommand
