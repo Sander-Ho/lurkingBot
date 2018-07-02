@@ -64,7 +64,9 @@ class RemindMe extends Commando.Command {
                 msg.say('will remind you of' + messageString + " in " + timeAmmount + " " + timeType);
                 var interval = setInterval(function() {
                         msg.reply(messageString);
+                        clearInterval(interval)
                 }, miliseconds);
+
             } else return msg.say(timeAmmount + " is not a valid number. try \n remind me in/at (20 h/min/sec)/(15:20)  your message here");
         } else if (commandType = "at") { // remind me at command
             var current_hour = date.getHours();
