@@ -15,6 +15,7 @@ client.registry
     .registerGroups([
         ['random', 'random commands'],
         ['regular', 'simple commands'],
+        ['timer', 'timing commands'],
         ['admin', 'commands for admins']
     ])
     .registerDefaultGroups()
@@ -26,5 +27,5 @@ client.on('ready', () => {
     console.log('Logged in!');
     client.user.setActivity(process.env.PREFIX + ' is the prefix');
 });
-console.log("logging in with " + process.env.TOKEN + " as token");
+//console.log("logging in with " + process.env.TOKEN + " as token");
 client.login(process.env.TOKEN);
