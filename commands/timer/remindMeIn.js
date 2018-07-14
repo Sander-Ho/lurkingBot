@@ -20,7 +20,7 @@ class RemindMe extends Commando.Command {
     async run(msg, {
         content
     }) {
-        var words = content.substring(0).split(' ');
+        var words = content.substring(0).split(' ');za
         words.shift(); // removing me
         var commandType = words[0]; // getting at/in and removing it from the array
         words.shift();

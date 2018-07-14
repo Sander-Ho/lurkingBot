@@ -17,7 +17,6 @@ class SayCommand extends Commando.Command {
             ]
         });
     }
-
     async run(msg, { text }) {
         msg.delete();
         return msg.say(text);

@@ -17,7 +17,6 @@ class EncodeCommand extends Commando.Command {
 			]
 		});
 	}
-
 	async run(msg, { text }) {
 		msg.delete();
 		text = text.replace(/[a-zA-Z]/g, function(temp) {
@@ -25,11 +24,7 @@ class EncodeCommand extends Commando.Command {
 			else if (temp === 'Z') return 'A';
 			else return String.fromCharCode(temp.charCodeAt(0) + 1);
 		});
-		return text.replace(/[aeiou]/g, function(temp) {
-			return temp.toUpperCase();
-		});
-
-		return msg.say(encodedText);
+		return msg.say(text);
 	}
 };
 module.exports = EncodeCommand;
