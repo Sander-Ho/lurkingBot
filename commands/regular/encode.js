@@ -6,12 +6,12 @@ class EncodeCommand extends Commando.Command {
 			name: 'encode',
 			group: 'regular',
 			memberName: 'encode',
-			description: 'Replies with the text you provide.',
-			examples: ['say Hi there!'],
+			description: 'sends the same message but shifts every letter one further in the alphabet.',
+			examples: ['encode this'],
 			args: [
 			{
 				key: 'text',
-				prompt: 'What text would you like the bot to say?',
+				prompt: 'What text would you like the bot to encode?',
 				type: 'string'
 			}
 			]
@@ -26,5 +26,5 @@ class EncodeCommand extends Commando.Command {
 		});
 		return msg.say(text);
 	}
-};
+}
 module.exports = EncodeCommand;

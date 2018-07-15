@@ -8,7 +8,7 @@ const client = new CommandoClient({
 	owner: process.env.OWNER,
 	commandPrefix: process.env.PREFIX,
 	disableEveryone: true
-});﻿
+});
 
 client.registry
 	.registerDefaultTypes()

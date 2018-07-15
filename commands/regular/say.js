@@ -21,5 +21,5 @@ class SayCommand extends Commando.Command {
         msg.delete();
         return msg.say(text);
     }
-};
+}
 module.exports = SayCommand;
